@@ -15,6 +15,7 @@ body {
 header {
   grid-area: 1 / 2 / 2 / -1;
   background-color: red;
+  padding: 10px;
 }
 
 .sidebar {
@@ -29,6 +30,7 @@ main {
   grid-template-rows: repeat(auto, 1fr); */
   /* background-color: #a9a9a9; */
   gap: 10px;
+  padding: 10px;
 }
 
 .projects {
