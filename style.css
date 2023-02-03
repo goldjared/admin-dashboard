@@ -1,10 +1,8 @@
-:root {
-  background-color: darkgray;
-}
-
 * {
   margin: 0;
   padding: 0;
+  outline: solid 1px red;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,7 +10,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
-  background-color: orange;
 }
 
 header {
@@ -27,14 +24,31 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 3fr, 1fr;
-  background-color: rgba(96, 207, 96, 0.2);
+  grid-template-columns: 3fr 1fr;
+  /* grid-template-columns: 3fr, 1fr;
+  grid-template-rows: repeat(auto, 1fr); */
+  /* background-color: #a9a9a9; */
+  gap: 10px;
 }
 
 .projects {
-  background-color: pink;
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+}
+
+.project {
+  background-color: red;
+}
+
+.main-right {
+  grid-column: 2;
+}
+
+.announcements {
+  grid-area: 1 / 2;
+}
+
+.trending {
+  grid-area: 2 / 2;
 }
