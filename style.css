@@ -1,0 +1,40 @@
+:root {
+  background-color: darkgray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  background-color: orange;
+}
+
+header {
+  grid-area: 1 / 2 / 2 / -1;
+  background-color: red;
+}
+
+.sidebar {
+  background-color: green;
+  grid-area: 1 / 1 / -1 / 2;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr, 1fr;
+  background-color: rgba(96, 207, 96, 0.2);
+}
+
+.projects {
+  background-color: pink;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
