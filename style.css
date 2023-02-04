@@ -10,6 +10,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
+  background-color: aquamarine;
 }
 
 header {
@@ -40,10 +41,11 @@ main {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
-.project {
-  background-color: red;
+.project, .announcements, .trending {
+  background-color: rgb(255, 174, 174);
   padding: 10px;
   border-radius: 10px;
 }
