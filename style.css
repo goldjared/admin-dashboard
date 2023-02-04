@@ -22,6 +22,10 @@ header {
 .sidebar {
   background-color: green;
   grid-area: 1 / 1 / -1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 50px;
 }
 
 main {
