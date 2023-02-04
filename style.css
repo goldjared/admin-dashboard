@@ -26,11 +26,14 @@ header {
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  /* grid-template-columns: 3fr, 1fr;
-  grid-template-rows: repeat(auto, 1fr); */
-  /* background-color: #a9a9a9; */
+  grid-template-rows: 100px 100px 100px;
+  padding: 20px 20px 20px 10px;
   gap: 10px;
-  padding: 10px;
+}
+
+.main-left {
+  display: grid;
+  gap: 10px;
 }
 
 .projects {
@@ -41,16 +44,11 @@ main {
 
 .project {
   background-color: red;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .main-right {
-  grid-column: 2;
-}
-
-.announcements {
-  grid-area: 1 / 2;
-}
-
-.trending {
-  grid-area: 2 / 2;
+  display: grid;
+  gap: 10px;
 }
