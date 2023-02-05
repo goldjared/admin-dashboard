@@ -52,20 +52,24 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
-  background-color: aquamarine;
+  background-color: #6366f1;
+  color: #eef2ff;
 }
 
 header {
   grid-area: 1 / 2 / 2 / -1;
-  background-color: red;
+  background-color: #4f46e5;
   padding: 10px;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr 2fr;
 }
 
 .left-header {
-  grid-area: 1 / 1 / -1 / -1;
+  grid-area: 1 / 1 / -1 / 2;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(100px, 1fr));
+  grid-template-columns: 4em 1fr;
+  align-items: center;
 }
 
 .right-header {
@@ -73,16 +77,29 @@ header {
 }
 
 .left-header button {
-  border-radius: 10px;
+  border-radius: 15px;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 2em;
+  width: 2em;
+  background-color: #6366f1;
+  margin: 0;
 }
 
 .left-header input {
   border-radius: 10px;
-  border-color: red;
+  border-color: #818cf8;
+  background-color: #6366f1;
+  height: 2em;
+  width: 15em;
+  grid-area: 1 / 2 / 2 / 2;
+}
+
+.left-header .user {
+  grid-area: 2 / 1 / -1 / 2;
 }
 
 .sidebar {
-  background-color: green;
+  background-color: #312e81;
   grid-area: 1 / 1 / -1 / 2;
   display: grid;
   grid-template-columns: 1fr;
@@ -116,7 +133,7 @@ main {
 }
 
 .project, .announcements, .trending {
-  background-color: rgb(255, 174, 174);
+  background-color: #818cf8;
   padding: 10px;
   border-radius: 10px;
 }
