@@ -110,6 +110,11 @@ main {
   grid-template-rows: auto;
 }
 
+.project {
+  border: solid 5px #818cf8;
+  border-left-color: #e0e7ff;
+}
+
 .project, .announcements, .trending {
   background-color: rgb(255, 174, 174);
   padding: 10px;
